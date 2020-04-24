@@ -1,0 +1,138 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+
+        applicationId "com.sunil.covid19globalmeter"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        sourceSets {
+            main {
+                jniLibs.srcDirs = ['libs']
+            }
+        }
+        multiDexEnabled true
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    def coroutinesVersion = '1.3.5'
+    def appcompatVersion = '1.1.0'
+    def coreKtxVersion = '1.2.0'
+    def constraintLayoutVersion = '1.1.3'
+    def swiperefreshLayoutVersion = '1.0.0'
+    def recyclerviewVersion = "1.2.0-alpha02"
+    def lifecycleVersion = '2.2.0'
+    def retrofitVersion = '2.7.2'
+    def moshiVersion = '1.9.2'
+    def workManagerVersion = '2.3.4'
+    def koinVersion = '2.1.5'
+    def materialDesignVersion = '1.1.0'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    /*
+    * kotlin Coroutines
+    * */
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+
+    /*
+    * Android design
+    * */
+    implementation "androidx.appcompat:appcompat:$appcompatVersion"
+    implementation "androidx.core:core-ktx:$coreKtxVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:$swiperefreshLayoutVersion"
+    implementation "androidx.recyclerview:recyclerview:$recyclerviewVersion"
+
+    /*
+    * Architecture Components
+    * */
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
+
+    /*
+     * Retrofit network library
+     * */
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
+
+    /*
+     * Moshi for parsing library
+     * */
+    implementation "com.squareup.moshi:moshi-kotlin:$moshiVersion"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
+
+    /*
+     * for background purpose
+     * */
+    implementation "androidx.work:work-runtime-ktx:$workManagerVersion"
+
+    /*
+     * Koin dependency for Kotlin,Android,Scope
+     * features,ViewModel features
+     * */
+    implementation "org.koin:koin-core:$koinVersion"
+    implementation "org.koin:koin-android:$koinVersion"
+    implementation "org.koin:koin-android-scope:$koinVersion"
+    implementation "org.koin:koin-android-viewmodel:$koinVersion"
+
+    /*
+    * Material Design
+    * */
+    implementation "com.google.android.material:material:$materialDesignVersion"
+
+    /*
+     *  dp and sp size dependency
+     * */
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    /*
+    * view pager and fragment
+    * */
+    implementation 'androidx.viewpager2:viewpager2:1.1.0-alpha01'
+    implementation 'androidx.fragment:fragment-ktx:1.2.4'
+
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+}

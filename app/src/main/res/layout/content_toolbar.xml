@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/themeToolbarBg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/app_padding"
+        android:paddingEnd="@dimen/normal_padding">
+
+        <LinearLayout
+            android:layout_width="@dimen/toolbar_image_size"
+            android:layout_height="@dimen/toolbar_image_size"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgToolbarHome"
+                android:layout_width="@dimen/toolbar_inner_image_size"
+                android:layout_height="@dimen/toolbar_inner_image_size"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            style="@style/TextViewToolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgMenu2"
+            android:layout_width="@dimen/menu_icon_size"
+            android:layout_height="@dimen/menu_icon_size"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:padding="@dimen/normal_padding_half" />
+
+        <ImageView
+            android:id="@+id/imgMenu"
+            android:layout_width="@dimen/menu_icon_size"
+            android:layout_height="@dimen/menu_icon_size"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:padding="@dimen/normal_padding_half" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_stroke"
+        android:background="@color/toolbarDividerColor" />
+</LinearLayout>

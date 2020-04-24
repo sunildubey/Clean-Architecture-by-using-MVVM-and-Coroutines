@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/card_padding">
+
+    <ImageView
+        android:id="@+id/imgError"
+        android:layout_width="@dimen/big_image_size"
+        android:layout_height="@dimen/big_image_size"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvErrorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/app_margin"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/line_spacing"
+        android:paddingBottom="0dp"
+        android:textColor="@color/colorTextErrorMessage"
+        android:textSize="@dimen/text_size_header" />
+
+    <TextView
+        android:id="@+id/tvErrorDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/line_spacing"
+        android:paddingBottom="0dp"
+        android:textColor="@color/colorTextErrorMessage"
+        android:textSize="@dimen/text_size_normal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/app_margin"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/normal_padding"
+        android:paddingBottom="@dimen/normal_padding"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TextViewMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:text="@string/retry"
+            android:textColor="@color/colorTextLink"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/google_sans</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="fontFamily">@font/google_sans</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextViewToolbar" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorTextToolbar</item>
+        <item name="android:textSize">@dimen/text_size_toolbar</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing</item>
+    </style>
+
+    <style name="TextViewH1" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorTextHeader</item>
+        <item name="android:textSize">@dimen/text_size_h1</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing</item>
+    </style>
+
+    <style name="TextViewHeader" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorTextHeader</item>
+        <item name="android:textColorHint">@color/colorTextHeader</item>
+        <item name="android:textSize">@dimen/text_size_header</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing</item>
+    </style>
+
+    <style name="TextViewMedium" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorTextMedium</item>
+        <item name="android:textColorHint">@color/colorTextMedium</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing</item>
+    </style>
+
+    <style name="TextViewMediumAsHeader" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorTextMedium</item>
+        <item name="android:textColorHint">@color/colorTextMedium</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing</item>
+    </style>
+
+    <style name="TextViewNormal" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorTextNormal</item>
+        <item name="android:textColorHint">@color/colorTextNormal</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing</item>
+    </style>
+
+    <style name="TextViewNormalAsHeader" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorTextNormal</item>
+        <item name="android:textColorHint">@color/colorTextNormal</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing</item>
+    </style>
+
+    <style name="VerticalRecyclerViewStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:animationCache">false</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:paddingStart">@dimen/app_padding</item>
+        <item name="android:paddingEnd">@dimen/app_padding</item>
+        <item name="android:paddingTop">@dimen/normal_padding</item>
+        <item name="android:paddingBottom">@dimen/normal_padding</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:smoothScrollbar">true</item>
+    </style>
+
+</resources>

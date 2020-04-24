@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#26A1DB</color>
+    <color name="colorPrimaryDark">#26A1DB</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="themeAppBg">#26A1DB</color>
+    <color name="themeToolbarBg">#F4F4F4</color>
+    <color name="toolbarDividerColor">#171717</color>
+    <color name="themeCardBg">#FFFFFF</color>
+
+    <color name="colorTextToolbar">#2B2B2B</color>
+    <color name="colorTextHeader">#2B2B2B</color>
+    <color name="colorTextMedium">#808080</color>
+    <color name="colorTextNormal">#808080</color>
+    <color name="colorTextLink">#26A1DB</color>
+    <color name="colorTextErrorMessage">#808080</color>
+    <color name="colorTextErrorSubMessage">#808080</color>
+    <color name="textColor">#ffffff</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="red">#D80D0D</color>
+    <color name="green">#4CAF50</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="black">#1B1919</color>
+    <color name="bhue">#2196F3</color>
+</resources>
